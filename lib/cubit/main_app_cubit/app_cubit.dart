@@ -22,7 +22,7 @@ class AppCubit extends Cubit<AppStates> {
   bool activity4 = false;
   int currentIndex = 0;
   List<Widget> widgets =   [HomeScreen(), RecipesScreen(), ProfileScreen()];
-
+//test
   ///--------------------------------------------------app layout
 
   void changeBottomNav(int index) {

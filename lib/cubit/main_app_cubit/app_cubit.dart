@@ -130,5 +130,19 @@ class AppCubit extends Cubit<AppStates> {
         context, MaterialPageRoute(builder: (context) => MainScreenLayout()));
     emit(StoreUserDataState());
   }
+
+  calculateDate(DateTime myBornDate) {
+    DateTime now = DateTime.now();
+    int age = now.year - myBornDate.year;
+    if (now.month < myBornDate.month ||
+        (now.month == myBornDate.month && now.day < myBornDate.day)) {
+      age--;
+    }
+    return age;
+  }
+
+  String toBeginningOfSentenceCase(String text) {
+    return text.substring(0, 1).toUpperCase() + text.substring(1);
+  }
 }
 //TEST again

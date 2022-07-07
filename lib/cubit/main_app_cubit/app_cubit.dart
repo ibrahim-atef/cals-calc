@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
- import 'package:cals_calc/cubit/main_app_cubit/app_states.dart';
+import 'package:cals_calc/cubit/main_app_cubit/app_states.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -21,7 +21,8 @@ class AppCubit extends Cubit<AppStates> {
   bool activity3 = false;
   bool activity4 = false;
   int currentIndex = 0;
-  List<Widget> widgets =   [HomeScreen(), RecipesScreen(), ProfileScreen()];
+  List<Widget> widgets = [HomeScreen(), RecipesScreen(), ProfileScreen()];
+
 //test
   ///--------------------------------------------------app layout
 
@@ -130,3 +131,4 @@ class AppCubit extends Cubit<AppStates> {
     emit(StoreUserDataState());
   }
 }
+//TEST again

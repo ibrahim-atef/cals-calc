@@ -1,9 +1,9 @@
 import 'package:bloc/bloc.dart';
-import 'package:cals_calc/cubit/home_cubit/home_states.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../services/local/database_helper.dart';
+import '../../database/local/database_helper.dart';
+import 'home_states.dart';
 
 class HomeCubit extends Cubit<HomeStates> {
   HomeCubit() : super(HomeInitialState());

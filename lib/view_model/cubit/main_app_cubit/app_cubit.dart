@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:cals_calc/cubit/main_app_cubit/app_states.dart';
-import 'package:flutter/material.dart';
+import 'package:cals_calc/view_model/cubit/main_app_cubit/app_states.dart';
+ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart';
@@ -129,6 +129,20 @@ class AppCubit extends Cubit<AppStates> {
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: (context) => MainScreenLayout()));
     emit(StoreUserDataState());
+  }
+
+  calculateDate(DateTime myBornDate) {
+    DateTime now = DateTime.now();
+    int age = now.year - myBornDate.year;
+    if (now.month < myBornDate.month ||
+        (now.month == myBornDate.month && now.day < myBornDate.day)) {
+      age--;
+    }
+    return age;
+  }
+
+  String toBeginningOfSentenceCase(String text) {
+    return text.substring(0, 1).toUpperCase() + text.substring(1);
   }
 }
 //TEST again

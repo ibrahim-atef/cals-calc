@@ -1,16 +1,17 @@
 import 'package:bloc/bloc.dart';
-import 'package:cals_calc/cubit/main_app_cubit/app_cubit.dart';
-import 'package:cals_calc/cubit/main_app_cubit/app_states.dart';
-import 'package:cals_calc/services/local/database_helper.dart';
+
 import 'package:cals_calc/utils/bloc_observer.dart';
 import 'package:cals_calc/view/screens/splash_screen.dart';
+import 'package:cals_calc/view_model/cubit/home_cubit/home_cubit.dart';
+import 'package:cals_calc/view_model/cubit/main_app_cubit/app_cubit.dart';
+import 'package:cals_calc/view_model/cubit/main_app_cubit/app_states.dart';
+import 'package:cals_calc/view_model/database/local/database_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:workmanager/workmanager.dart';
 
-import 'cubit/home_cubit/home_cubit.dart';
 
 final FlutterLocalNotificationsPlugin notificationsPlugin =
     FlutterLocalNotificationsPlugin();

@@ -1,11 +1,12 @@
-import 'package:cals_calc/cubit/main_app_cubit/app_cubit.dart';
-import 'package:cals_calc/cubit/main_app_cubit/app_states.dart';
+
 import 'package:cals_calc/utils/colors.dart';
 import 'package:cals_calc/utils/size_config.dart';
-import 'package:cals_calc/view/widgets/add_info_widgets/activity_widget.dart';
-import 'package:cals_calc/view/widgets/height_size_box.dart';
-import 'package:cals_calc/view/widgets/add_info_widgets/reusable_form_field_widget.dart';
-import 'package:cals_calc/view/widgets/text_utils.dart';
+import 'package:cals_calc/view/components/add_info_widgets/activity_widget.dart';
+import 'package:cals_calc/view/components/height_size_box.dart';
+import 'package:cals_calc/view/components/add_info_widgets/reusable_form_field_widget.dart';
+import 'package:cals_calc/view/components/text_utils.dart';
+import 'package:cals_calc/view_model/cubit/main_app_cubit/app_cubit.dart';
+import 'package:cals_calc/view_model/cubit/main_app_cubit/app_states.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

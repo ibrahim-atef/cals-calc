@@ -1,9 +1,11 @@
-import 'package:cals_calc/cubit/main_app_cubit/app_cubit.dart';
-import 'package:cals_calc/cubit/main_app_cubit/app_states.dart';
+
 import 'package:cals_calc/utils/colors.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../view_model/cubit/main_app_cubit/app_cubit.dart';
+import '../../view_model/cubit/main_app_cubit/app_states.dart';
 
 
 

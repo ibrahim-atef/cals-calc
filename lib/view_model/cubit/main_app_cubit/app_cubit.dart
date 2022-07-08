@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:cals_calc/cubit/main_app_cubit/app_states.dart';
-import 'package:flutter/material.dart';
+import 'package:cals_calc/view_model/cubit/main_app_cubit/app_states.dart';
+ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart';

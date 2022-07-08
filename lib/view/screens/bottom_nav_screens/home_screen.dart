@@ -1,7 +1,6 @@
-import 'package:cals_calc/cubit/home_cubit/home_cubit.dart';
-import 'package:cals_calc/cubit/home_cubit/home_states.dart';
+
 import 'package:cals_calc/utils/size_config.dart';
-import 'package:cals_calc/view/widgets/height_size_box.dart';
+import 'package:cals_calc/view/components/height_size_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -9,6 +8,8 @@ import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
 import '../../../utils/colors.dart';
+import '../../../view_model/cubit/home_cubit/home_cubit.dart';
+import '../../../view_model/cubit/home_cubit/home_states.dart';
 
 class HomeScreen extends StatelessWidget {
   @override

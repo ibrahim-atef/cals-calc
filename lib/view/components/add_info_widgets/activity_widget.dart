@@ -2,8 +2,9 @@ import 'package:cals_calc/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../cubit/main_app_cubit/app_cubit.dart';
-import '../../../cubit/main_app_cubit/app_states.dart';
+import '../../../view_model/cubit/main_app_cubit/app_cubit.dart';
+import '../../../view_model/cubit/main_app_cubit/app_states.dart';
+
 
 class ActivityWidget extends StatelessWidget {
   bool selected1 = false;
